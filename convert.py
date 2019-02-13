@@ -5,17 +5,15 @@ Convert slack black.css to snooker.css
 import re
 import pandas as pd
 
-infile = 'black.css'
+infile = 'template.css'
 outfile = 'snooker.css'
-mapfile = 'color_map.csv'
 snookerfile = 'color_snooker.csv'
 
 def convert_colors():
     with open(infile, 'r') as fin:
-        css = fin.read()
+        css_template = fin.read()
 
-    css_base16 = replace_with_dict(css, csv2dict(mapfile))
-    css_snooker = replace_with_dict(css_base16, csv2dict(snookerfile))
+    css_snooker = replace_with_dict(css_template, csv2dict(snookerfile))
 
     with open(outfile, 'w') as fout:
         fout.write(css_snooker)
