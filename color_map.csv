@@ -1,7 +1,7 @@
 000,bg
 151515,bg_main
-222,bg_light
-222222,bg_light
+222,bg_main
+222222,bg_main
 2f2f2f,bg_light
 363636,bg_sel
 424242,fg_com
@@ -12,7 +12,7 @@
 add,fg_light
 c1a5e1,fg_light
 c7c7c7,fg_light
-e6e6e6,fg_bright
+e6e6e6,fg_main
 eee,fg_bright
 fff6d1,fg_bright
 fff,fg_bright
